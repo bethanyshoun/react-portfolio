@@ -4,7 +4,7 @@ const Header = ({ name }) => {
     console.log(name);
     return (
         <header>
-            Hi
+            Bethany Shoun
         </header>
     )
 
