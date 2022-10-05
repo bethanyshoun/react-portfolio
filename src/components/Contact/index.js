@@ -4,7 +4,7 @@ const Contact = ({ name }) => {
     console.log(name);
     return (
         <header>
-            Hi
+            Contact form
         </header>
     )
 

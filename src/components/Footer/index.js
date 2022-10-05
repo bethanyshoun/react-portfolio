@@ -4,7 +4,7 @@ const Header = ({ name }) => {
     console.log(name);
     return (
         <header>
-            Bethany Shoun
+           by Bethany Shoun
         </header>
     )
 
