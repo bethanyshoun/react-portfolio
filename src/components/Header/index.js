@@ -1,14 +1,14 @@
-import React from 'react';
+// import React from 'react';
 
 
-const Header = ({ name }) => {
-    console.log(name);
-    return (
-       <header className="flex-row px-1">
+// const Header = ({ name }) => {
+//     console.log(name);
+//     return (
+//        <header className="flex-row px-1">
 
-       </header>
-    );
+//        </header>
+//     );
 
-}
+// }
 
-export default Header;
+// export default Header;

@@ -19,8 +19,10 @@ function Nav(props) {
     return (
       <header className="flex-row px-1">
         <h2>
-          <a data-testid="link" href="/">
-            <span role="img"></span> Bethany Shoun
+          <a id="link" href="/">
+            <span onClick={() => handleClick('About')}>
+            Bethany Shoun
+            </span>
           </a>
         </h2>
         <nav>
@@ -31,7 +33,7 @@ function Nav(props) {
               </span>
             </li>
             <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-              <span onClick={() => handleClick('Contact')}>
+              <span onClick={() => handleClick('ContactForm')}>
                 Contact
               </span>
             </li>
