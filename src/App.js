@@ -1,18 +1,17 @@
 import React, { useState } from 'react';
 import './App.css';
-//import Header from './components/Header';
 import About from './components/About';
 import Footer from './components/Footer';
 import Nav from './components/Nav';
 import Portfolio from './components/Portfolio';
-import ContactForm from './components/ContactForm';
+import Contact from './components/Contact';
 import Resume from './components/Resume';
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
   const [categories] = useState([
     {name: 'About' },
-    { name: 'ContactForm' },
+    { name: 'Contact' },
     { name: 'Portfolio' },
     { name: 'Resume' },
   ]); 
@@ -21,7 +20,6 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Header /> */}
       <Nav
         categories={categories}
         setCurrentCategory={setCurrentCategory}
@@ -33,13 +31,15 @@ function App() {
       <main>
       {!contactSelected ? (
           <>
+        
         <About></About>
         <Portfolio></Portfolio>
         <Resume></Resume>
         </>
         ) : (
-        <ContactForm></ContactForm>
+          <Contact></Contact>
         )}
+        
       </main>
       <Footer />
     </div>

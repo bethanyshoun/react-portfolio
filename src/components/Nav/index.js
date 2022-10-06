@@ -1,6 +1,5 @@
 import React from "react";
 
-
 function Nav(props) {
     const {
       categories = [],
@@ -11,33 +10,29 @@ function Nav(props) {
     } = props;
   
   
-    const handleClick = (item) => {
-      console.log(item);
-      return item;
-    };
+    // const handleClick = (item) => {
+    //   console.log(item);
+    //   return item;
+    // };
   
     return (
-      <header className="flex-row px-1">
+      <header className="flex-row px-1" id="header">
         <h2>
           <a id="link" href="/">
-            <span onClick={() => handleClick('About')}>
             Bethany Shoun
-            </span>
           </a>
         </h2>
         <nav>
           <ul className="flex-row">
-            <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-              <span onClick={() => handleClick('About')}>
-                About Me
-              </span>
+            <li className="mx-2">
+              <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
+                About me
+              </a>
             </li>
             <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-              <span onClick={() => handleClick('ContactForm')}>
-                Contact
-              </span>
+              <span onClick={() => setContactSelected(true)}>Contact</span>
             </li>
-            <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+            {/* <li className={`mx-2 ${contactSelected && 'navActive'}`}>
               <span onClick={() => handleClick('Portfolio')}>
                 Portfolio
               </span>
@@ -46,7 +41,7 @@ function Nav(props) {
               <span onClick={() => handleClick('Resume')}>
                 Resume
               </span>
-            </li>
+            </li> */}
             {categories.map((category) => (
             <li
               className={`mx-1 ${
@@ -60,7 +55,6 @@ function Nav(props) {
                   setContactSelected(false);
                 }}
               >
-              
               </span>
             </li>
           ))}
