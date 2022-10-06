@@ -1,7 +1,7 @@
 import React from 'react';
 import headshot from "../../assets/main/BASphoto.jpg";
 
-const About = () => {
+function About () {
     return (
         <section className="my-5">
             <h1 id="about">About Me</h1>

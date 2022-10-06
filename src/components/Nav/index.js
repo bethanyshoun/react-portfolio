@@ -10,10 +10,10 @@ function Nav(props) {
     } = props;
   
   
-    // const handleClick = (item) => {
-    //   console.log(item);
-    //   return item;
-    // };
+    const handleClick = (item) => {
+      console.log(item);
+      return item;
+    };
   
     return (
       <header className="flex-row px-1" id="header">
@@ -32,7 +32,7 @@ function Nav(props) {
             <li className={`mx-2 ${contactSelected && 'navActive'}`}>
               <span onClick={() => setContactSelected(true)}>Contact</span>
             </li>
-            {/* <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+            <li className={`mx-2 ${contactSelected && 'navActive'}`}>
               <span onClick={() => handleClick('Portfolio')}>
                 Portfolio
               </span>
@@ -41,7 +41,7 @@ function Nav(props) {
               <span onClick={() => handleClick('Resume')}>
                 Resume
               </span>
-            </li> */}
+            </li>
             {categories.map((category) => (
             <li
               className={`mx-1 ${

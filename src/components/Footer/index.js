@@ -1,7 +1,6 @@
 import React from 'react';
 
-const Header = ({ name }) => {
-    console.log(name);
+function Footer () {
     return (
         <footer className="flex-row px-1">
             <h6 id="footer">
@@ -12,4 +11,4 @@ const Header = ({ name }) => {
 
 }
 
-export default Header;
+export default Footer;

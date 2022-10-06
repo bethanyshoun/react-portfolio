@@ -1,11 +1,10 @@
 import React from 'react';
 
-const Portfolio = () => {
-    
+function Portfolio () {
     return (
         <section className="flex-row px-1">
         </section>
-    )
+    );
 
 }
 

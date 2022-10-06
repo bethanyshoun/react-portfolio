@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Resume = () => {
+function Resume () {
     
     return (
         <section className="flex-row px-1">
-            
+            Hi
         </section>
     )
 
