@@ -25,12 +25,9 @@ function Nav(props) {
         <nav>
           <ul className="flex-row">
             <li className="mx-2">
-              <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
+              <a data-testid="about" href="/" onClick={() => setContactSelected(false)}>
                 About me
               </a>
-            </li>
-            <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-              <span onClick={() => setContactSelected(true)}>Contact</span>
             </li>
             <li className={`mx-2 ${contactSelected && 'navActive'}`}>
               <span onClick={() => handleClick('Portfolio')}>
@@ -41,6 +38,9 @@ function Nav(props) {
               <span onClick={() => handleClick('Resume')}>
                 Resume
               </span>
+            </li>
+            <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+              <span onClick={() => setContactSelected(true)}>Contact</span>
             </li>
             {categories.map((category) => (
             <li
