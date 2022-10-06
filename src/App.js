@@ -39,7 +39,7 @@ function App() {
         <Portfolio></Portfolio>
         </>
         ) : (
-          <Contact></Contact>
+        <Contact></Contact>
         )}
       </main>
       <Footer />

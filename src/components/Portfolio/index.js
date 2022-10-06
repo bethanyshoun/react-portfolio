@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Project = ({ name }) => {
-    console.log(name);
+const Portfolio = () => {
+    
     return (
-        <header>
-            Project
-        </header>
+        <section className="flex-row px-1">
+            <h1 class="portfolio"></h1>
+        </section>
     )
 
 }
 
-export default Project;
+export default Portfolio;
